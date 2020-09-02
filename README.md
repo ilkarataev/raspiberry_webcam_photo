@@ -6,7 +6,8 @@ Project needs
     2. php-fpm  
     3.fswebcam  
     4. Usb camera plug in.  
-    5. Gpio4 enable light(light+3.3v gpio4 GND)  
+    5. Gpio4 enable light(light+3.3v PIN 1. GPIO4 GND PIN 7)  
+![alt text](https://github.com/ilkarataev/raspiberry_webcam_photo/blob/master/img/board.jpg)
 
 To install on rasberry pi model B  
 ```curl https://raw.githubusercontent.com/ilkarataev/raspiberrypi_camera_shot/master/install.bash| /bin/bash -x  ```
