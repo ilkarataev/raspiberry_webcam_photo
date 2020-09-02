@@ -1,5 +1,6 @@
 # raspiberry_webcam_photo
-This repository have script and instruction to get image from usb camera rasberrypi
+This repository have script and instruction to get image from usb camera plug in rasberrypi.
+I didn't find full instruction and decide create script.
 
 Project needs
     1. nginx  
