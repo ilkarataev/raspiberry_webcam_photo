@@ -10,7 +10,7 @@ Project needs
     5. Gpio4 enable light(light+3.3v PIN 1. GPIO4 GND PIN 7)  
 ![alt text](https://github.com/ilkarataev/raspiberry_webcam_photo/blob/master/img/board.jpg)
 
-To install on rasberry pi model B  
+To install on rasberry pi model B.Webcam need plug in when ypu run script.
 ```curl https://raw.githubusercontent.com/ilkarataev/raspiberrypi_camera_shot/master/install.bash| /bin/bash -x  ```
 
 The best way use wifi module that working without any drivers install.I used rt5320.  

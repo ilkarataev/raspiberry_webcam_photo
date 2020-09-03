@@ -20,5 +20,6 @@ chmod 755  /var/www/pi/index.php /var/www/pi/camera.sh
 service nginx reload
 service php7.3-fpm restart
 update-rc.d autostart.sh defaults
+reboot
 
 
