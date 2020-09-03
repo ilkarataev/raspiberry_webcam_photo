@@ -4,7 +4,6 @@ apt update && apt upgrade -y
 apt install git nginx php7.3-fpm fswebcam vim -y
 usermod -a -G video www-data 
 usermod -a -G gpio www-data 
-chmod 777 /dev/video0
 mkdir /var/www/pi/
 
 cd /root && git clone https://github.com/ilkarataev/raspiberrypi_camera_shot.git
