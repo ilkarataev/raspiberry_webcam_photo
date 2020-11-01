@@ -1,5 +1,5 @@
 # raspiberry_webcam_photo
-This repository have script and instruction to get image from usb camera plug in rasberrypi. When ypu finished don't forget enable overlay or mount tmp for tmpfs.
+This repository have script and instruction to get image from usb camera plug in rasberrypi. When you finished don't forget enable overlay or mount tmp for tmpfs.
 I didn't find full instruction and decide create set up script.
 
 Project used:  
