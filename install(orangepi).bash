@@ -13,7 +13,7 @@ usermod -a -G gpio www-data
 mkdir /var/www/pi/
 
 cd /root && git clone https://github.com/ilkarataev/raspiberrypi_camera_shot.git
-if [[ $phpv == '7.2']]; then 
+if [[ "${phpv}" == "7.2" ]]; then
     sed -i 's|fswebcam -r 1280x720 --no-banner /tmp/viewcam.jpg|fswebcam -d /dev/video2 -r 1280x720 --no-banner /tmp/viewcam.jpg|' /root/raspiberrypi_camera_shot/server_script/webcam.sh
 fi
 
