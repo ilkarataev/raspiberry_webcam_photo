@@ -1,19 +1,13 @@
 #!/bin/bash
-# php version  dpkg -l | grep -E 'php[7-9]\.[0-9-]{1,4}-fpm' |awk '{ print $2 }'
 apt update && apt upgrade -y
 apt install git nginx php-fpm fswebcam vim -y
 usermod -a -G video www-data 
 usermod -a -G gpio www-data 
 mkdir -p /var/www/pi/
 
-if [[ -d "/etc/php/7.4/" ]]; then
-    phpv=7.4
-elif [[ -d "/etc/php/7.3/" ]]; then
-    phpv=7.3
-elif [[ -d "/etc/php/7.2/" ]]; then
-    phpv=7.2
-fi
+phpv=`dpkg -l | grep -E 'php[7-9]\.[0-9-]{1,4}-fpm' |awk '{ print $2 }'|tr -dc .'0-9'`
 cd /root && git clone https://github.com/ilkarataev/raspiberrypi_camera_shot.git
+#need for number of video input(orange pi used 0 1 for camera in board)
 if [[ -f "/etc/armbian-release" ]]; then
     sed -i 's|fswebcam -r 1280x720 --no-banner /tmp/viewcam.jpg|fswebcam -d /dev/video2 -r 1280x720 --no-banner /tmp/viewcam.jpg|' /root/raspiberrypi_camera_shot/server_script/webcam.sh
 fi
